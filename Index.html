@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior:smooth">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,16 +15,16 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:16px 4
 .brand-text{font-size:17px;font-weight:500;color:#5BBFCF;line-height:1.1}
 .brand-sub{font-size:10px;color:#1a9e73;letter-spacing:0.1em;font-style:italic;margin-top:3px}
 .nav-right{display:flex;align-items:center;gap:24px}
-.nav-link{font-size:12px;color:rgba(91,191,207,0.5);text-decoration:none}
-.ungc{font-size:10px;background:rgba(91,191,207,0.08);color:#5BBFCF;border:0.5px solid rgba(91,191,207,0.25);padding:4px 14px;border-radius:20px}
+.nav-link{font-size:12px;color:rgba(168,230,224,0.95);text-decoration:none}
+.ungc{font-size:10px;background:rgba(91,191,207,0.08);color:#5BBFCF;border:0.5px solid rgba(91,191,207,0.25);padding:4px 14px;border-radius:20px;text-decoration:none;cursor:pointer;transition:background 0.2s,color 0.2s}.ungc:hover{background:rgba(91,191,207,0.22);color:#fff}
 
 .hero{padding:72px 48px 64px;text-align:center;background:#060d0b;border-bottom:0.5px solid rgba(91,191,207,0.08)}
-.hero-eyebrow{font-size:11px;letter-spacing:0.14em;color:rgba(168,230,224,0.7);text-transform:uppercase;margin-bottom:28px;display:flex;align-items:center;justify-content:center;gap:16px;font-weight:500}
+.hero-eyebrow{font-size:11px;letter-spacing:0.14em;color:rgba(168,230,224,1.0);text-transform:uppercase;margin-bottom:28px;display:flex;align-items:center;justify-content:center;gap:16px;font-weight:500}
 .eyebrow-line{width:36px;height:0.5px;background:rgba(91,191,207,0.3)}
 .hero-logo{width:180px;height:auto;display:block;margin:0 auto 36px}
 .hero-h1{font-size:46px;font-weight:400;line-height:1.2;color:#5BBFCF;margin-bottom:18px;letter-spacing:-0.02em}
 .hero-h1 em{font-style:normal;color:#A8E6E0}
-.hero-p{font-size:16px;color:rgba(91,191,207,0.55);line-height:1.85;max-width:600px;margin:0 auto 36px}
+.hero-p{font-size:18px;color:rgba(240,237,230,0.92);line-height:1.85;max-width:600px;margin:0 auto 36px}
 .hero-tagline{display:inline-block;font-size:13px;font-weight:500;color:#060d0b;background:#5BBFCF;padding:13px 32px;border-radius:24px;letter-spacing:0.04em}
 
 .ticker-bar{background:#060606;border-top:0.5px solid rgba(91,191,207,0.15);border-bottom:0.5px solid rgba(91,191,207,0.15);overflow:hidden}
@@ -37,16 +37,16 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:16px 4
 .ticker-track{display:flex;gap:0;animation:run 80s linear infinite;width:max-content}
 .ticker-track:hover{animation-play-state:paused;cursor:default}
 .t-item{display:flex;align-items:center;gap:10px;white-space:nowrap;padding:0 24px;border-right:0.5px solid rgba(91,191,207,0.08)}
-.t-tag{font-size:9px;font-weight:600;padding:2px 8px;border-radius:3px;letter-spacing:0.06em;text-transform:uppercase}
+.t-tag{font-size:10px;font-weight:600;padding:3px 9px;border-radius:3px;letter-spacing:0.06em;text-transform:uppercase}
 .t-eu{background:rgba(91,191,207,0.12);color:#5BBFCF;border:0.5px solid rgba(91,191,207,0.25)}
 .t-sg{background:rgba(168,230,224,0.08);color:#A8E6E0;border:0.5px solid rgba(168,230,224,0.2)}
 .t-af{background:rgba(251,191,36,0.08);color:#fbbf24;border:0.5px solid rgba(251,191,36,0.2)}
 .t-mi{background:rgba(26,158,115,0.1);color:#1a9e73;border:0.5px solid rgba(26,158,115,0.25)}
 .t-gl{background:rgba(192,132,252,0.08);color:#c084fc;border:0.5px solid rgba(192,132,252,0.2)}
 .t-us{background:rgba(251,146,60,0.08);color:#fb923c;border:0.5px solid rgba(251,146,60,0.2)}
-.t-date{font-size:9px;color:rgba(91,191,207,0.3);letter-spacing:0.04em;font-variant-numeric:tabular-nums}
-.t-txt{font-size:11px;color:rgba(91,191,207,0.55);letter-spacing:0.01em}
-.t-val{font-size:11px;color:#1a9e73;font-weight:500}
+.t-date{font-size:10px;color:rgba(168,230,224,0.75);letter-spacing:0.04em;font-variant-numeric:tabular-nums}
+.t-txt{font-size:13px;color:rgba(240,237,230,0.90);letter-spacing:0.01em}
+.t-val{font-size:12px;color:#4ade80;font-weight:600}
 @keyframes run{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
 .pillars{display:grid;grid-template-columns:repeat(4,1fr);border-top:0.5px solid rgba(91,191,207,0.06);border-bottom:0.5px solid rgba(91,191,207,0.06)}
@@ -55,31 +55,31 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:16px 4
 .pillar:hover{background:rgba(91,191,207,0.05)}
 .p-icon{font-size:28px;margin-bottom:14px}
 .p-name{font-size:14px;font-weight:500;color:#5BBFCF;margin-bottom:7px}
-.p-sub{font-size:12px;color:rgba(91,191,207,0.38);line-height:1.6}
+.p-sub{font-size:12px;color:rgba(200,240,235,0.90);line-height:1.6}
 
 .body-section{display:grid;grid-template-columns:1.3fr 0.7fr;border-top:0.5px solid rgba(91,191,207,0.05);border-bottom:0.5px solid rgba(91,191,207,0.05)}
 .about{padding:52px 48px;border-right:0.5px solid rgba(91,191,207,0.05);background:#060d0b}
 .section-eye{font-size:10px;letter-spacing:0.14em;color:#1a9e73;text-transform:uppercase;margin-bottom:24px}
-.about-p{font-size:15px;color:rgba(91,191,207,0.55);line-height:1.9;margin-bottom:20px}
+.about-p{font-size:16px;color:rgba(240,237,230,0.88);line-height:1.9;margin-bottom:20px}
 .about-p strong{color:#5BBFCF;font-weight:500}
 .stats-col{padding:52px 32px;display:flex;flex-direction:column;gap:14px;background:#0c1a16}
 .stat-card{background:rgba(91,191,207,0.03);border:0.5px solid rgba(91,191,207,0.1);border-radius:6px;padding:18px 22px}
 .stat-n{font-size:28px;font-weight:500;color:#5BBFCF;line-height:1}
-.stat-l{font-size:12px;color:rgba(91,191,207,0.38);margin-top:6px;line-height:1.5}
+.stat-l{font-size:12px;color:rgba(200,240,235,0.85);margin-top:6px;line-height:1.5}
 
 .wisdom-bar{padding:16px 48px;background:#060606;display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap;border-top:0.5px solid rgba(91,191,207,0.05)}
-.wisdom-item{font-size:9px;letter-spacing:0.12em;color:rgba(91,191,207,0.35);text-transform:uppercase}
+.wisdom-item{font-size:9px;letter-spacing:0.12em;color:rgba(168,230,224,0.80);text-transform:uppercase}
 .wisdom-dot{width:3px;height:3px;border-radius:50%;background:rgba(26,158,115,0.5)}
 
 .contact-section{padding:36px 48px;background:#091410;border-top:0.5px solid rgba(91,191,207,0.08)}
 .contact-grid{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;flex-wrap:wrap}
 .contact-name{font-size:17px;font-weight:500;color:#5BBFCF;margin-bottom:4px}
 .contact-role{font-size:12px;color:#1a9e73;margin-bottom:16px;line-height:1.5;font-style:italic}
-.c-item{font-size:13px;color:rgba(91,191,207,0.5);margin-bottom:8px;display:flex;align-items:center;gap:8px}
-.dffh-note{font-size:11px;color:rgba(168,230,224,0.5);margin-top:14px;letter-spacing:0.02em;font-weight:500}
+.c-item{font-size:13px;color:rgba(200,240,235,0.90);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.dffh-note{font-size:11px;color:rgba(168,230,224,0.90);margin-top:14px;letter-spacing:0.02em;font-weight:500}
 
 footer{padding:18px 48px;display:flex;align-items:center;justify-content:space-between;border-top:0.5px solid rgba(91,191,207,0.05);background:#060d0b}
-footer span{font-size:11px;color:rgba(91,191,207,0.25)}
+footer span{font-size:11px;color:rgba(168,230,224,0.70)}
 </style>
 </head>
 <body>
@@ -95,10 +95,10 @@ footer span{font-size:11px;color:rgba(91,191,207,0.25)}
     </div>
   </div>
   <div class="nav-right">
-    <a class="nav-link" href="#">Platform</a>
-    <a class="nav-link" href="#">Research</a>
-    <a class="nav-link" href="#">Partners</a>
-    <span class="ungc">UN Global Compact Signatory</span>
+    <a class="nav-link" href="#platform">Platform</a>
+    <a class="nav-link" href="#research">Research</a>
+    <a class="nav-link" href="#partners">Partners</a>
+    <a class="ungc" href="https://unglobalcompact.org" target="_blank" rel="noopener noreferrer">UN Global Compact Signatory</a>
   </div>
 </nav>
 
@@ -164,14 +164,14 @@ footer span{font-size:11px;color:rgba(91,191,207,0.25)}
   </div>
 </div>
 
-<div class="pillars">
+<div class="pillars" id="research">
   <div class="pillar"><div class="p-icon">👗</div><div class="p-name">Fashion</div><div class="p-sub">Digital Product Passports & circular textile verification</div></div>
   <div class="pillar"><div class="p-icon">🌱</div><div class="p-name">Agriculture</div><div class="p-sub">Verified carbon-neutral & regenerative supply chains</div></div>
   <div class="pillar"><div class="p-icon">🐟</div><div class="p-name">Aquaculture</div><div class="p-sub">Tamper-proof sustainable harvest credentials</div></div>
   <div class="pillar"><div class="p-icon">🏭</div><div class="p-name">Manufacturing & Eco Tech</div><div class="p-sub">Post-quantum KPI authentication & immutable audit trails</div></div>
 </div>
 
-<div class="body-section">
+<div class="body-section" id="platform">
   <div class="about">
     <div class="section-eye">The platform</div>
     <p class="about-p">EcircNet™ applies <strong>NIST-standardized post-quantum cryptographic signatures</strong> to enterprise sustainability KPI records — creating tamper-proof, individually verifiable proof of circular performance that no regulator, auditor, or counterparty on earth can dispute.</p>
@@ -196,18 +196,18 @@ footer span{font-size:11px;color:rgba(91,191,207,0.25)}
   <span class="wisdom-item">Great Lakes Basin</span>
 </div>
 
-<div class="contact-section">
+<div class="contact-section" id="partners">
   <div class="contact-grid">
     <div>
-      <div class="contact-name">Curtis Vance</div>
+      <div class="contact-name">Curt Vance</div>
       <div class="contact-role">Founding Steward — EcircNet™ Circular Planetary Intelligence (ECPI)</div>
-      <div class="c-item">✉ MindandNature@protonmail.com</div>
+      <div class="c-item">✉ curt@detroitfamefactory.com</div>
       <div class="c-item">📞 (212) 920-0233</div>
       <div class="dffh-note">A platform of Detroit Fame Factory Holdings LLC</div>
     </div>
     <div style="text-align:right;padding-top:4px">
       <div style="font-size:12px;color:#5BBFCF;margin-bottom:12px;letter-spacing:0.04em">UN Global Compact Signatory</div>
-      <div style="font-size:11px;color:rgba(91,191,207,0.35);line-height:1.8;letter-spacing:0.02em">Built in Detroit.<br>Built for What Comes Next.</div>
+      <div style="font-size:11px;color:rgba(168,230,224,0.85);line-height:1.8;letter-spacing:0.02em">Built in Detroit.<br>Built for What Comes Next.</div>
     </div>
   </div>
 </div>
