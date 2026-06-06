@@ -15,6 +15,14 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:16px 4
 .brand-text{font-size:17px;font-weight:500;color:#5BBFCF;line-height:1.1}
 .brand-sub{font-size:10px;color:#1a9e73;letter-spacing:0.1em;font-style:italic;margin-top:3px}
 .nav-right{display:flex;align-items:center;gap:24px}
+.research-section{padding:52px 48px;background:#060d0b;border-top:0.5px solid rgba(91,191,207,0.05)}
+.research-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.research-card{display:block;padding:24px;background:rgba(91,191,207,0.04);border:0.5px solid rgba(91,191,207,0.15);border-radius:8px;text-decoration:none;transition:background 0.2s,border-color 0.2s}
+.research-card:hover{background:rgba(91,191,207,0.10);border-color:rgba(91,191,207,0.35)}
+.research-org{font-size:14px;font-weight:600;color:#5BBFCF;margin-bottom:8px;letter-spacing:0.02em}
+.research-desc{font-size:12px;color:rgba(200,240,235,0.75);line-height:1.7;margin-bottom:12px}
+.research-link{font-size:11px;color:rgba(91,191,207,0.70);letter-spacing:0.06em}
+.partners-statement{margin-bottom:32px}
 .nav-link{font-size:12px;color:rgba(168,230,224,0.95);text-decoration:none}
 .ungc{font-size:10px;background:rgba(91,191,207,0.08);color:#5BBFCF;border:0.5px solid rgba(91,191,207,0.25);padding:4px 14px;border-radius:20px;text-decoration:none;cursor:pointer;transition:background 0.2s,color 0.2s}.ungc:hover{background:rgba(91,191,207,0.22);color:#fff}
 
@@ -164,7 +172,34 @@ footer span{font-size:11px;color:rgba(168,230,224,0.70)}
   </div>
 </div>
 
-<div class="pillars" id="research">
+<div class="research-section" id="research">
+  <div class="section-eye" style="padding:0 0 20px 0">Research Foundation</div>
+  <p style="font-size:14px;color:rgba(200,240,235,0.80);line-height:1.8;max-width:700px;margin-bottom:32px">EcircNet™ is built on the frameworks established by the world's leading circular economy research institutions. Our verification infrastructure exists to make their standards provable.</p>
+  <div class="research-grid">
+    <a class="research-card" href="https://ellenmacarthurfoundation.org" target="_blank" rel="noopener noreferrer">
+      <div class="research-org">Ellen MacArthur Foundation</div>
+      <div class="research-desc">The global authority on circular economy — defining the frameworks EcircNet™ verifies</div>
+      <div class="research-link">Visit →</div>
+    </a>
+    <a class="research-card" href="https://weforum.org/topics/circular-economy" target="_blank" rel="noopener noreferrer">
+      <div class="research-org">World Economic Forum</div>
+      <div class="research-desc">Circular economy policy, industry transformation reports, and global standards</div>
+      <div class="research-link">Visit →</div>
+    </a>
+    <a class="research-card" href="https://unglobalcompact.org" target="_blank" rel="noopener noreferrer">
+      <div class="research-org">UN Global Compact</div>
+      <div class="research-desc">The world's largest corporate sustainability initiative — EcircNet™ is a proud signatory</div>
+      <div class="research-link">Visit →</div>
+    </a>
+    <a class="research-card" href="https://unep.org/explore-topics/resource-efficiency/what-we-do/responsible-industry/circular-economy" target="_blank" rel="noopener noreferrer">
+      <div class="research-org">UN Environment Programme</div>
+      <div class="research-desc">Global resource efficiency and circular economy policy leadership</div>
+      <div class="research-link">Visit →</div>
+    </a>
+  </div>
+</div>
+
+<div class="pillars">
   <div class="pillar"><div class="p-icon">👗</div><div class="p-name">Fashion</div><div class="p-sub">Digital Product Passports & circular textile verification</div></div>
   <div class="pillar"><div class="p-icon">🌱</div><div class="p-name">Agriculture</div><div class="p-sub">Verified carbon-neutral & regenerative supply chains</div></div>
   <div class="pillar"><div class="p-icon">🐟</div><div class="p-name">Aquaculture</div><div class="p-sub">Tamper-proof sustainable harvest credentials</div></div>
@@ -197,6 +232,11 @@ footer span{font-size:11px;color:rgba(168,230,224,0.70)}
 </div>
 
 <div class="contact-section" id="partners">
+  <div class="partners-statement">
+    <div class="section-eye" style="margin-bottom:16px">Partners</div>
+    <p style="font-size:15px;color:rgba(200,240,235,0.90);line-height:1.9;max-width:680px;margin-bottom:12px">EcircNet™ operates within the <a href="https://unglobalcompact.org" target="_blank" rel="noopener noreferrer" style="color:#5BBFCF;text-decoration:none">UN Global Compact network</a> — the world's largest corporate sustainability initiative, comprising <strong style="color:#5BBFCF">20,000+ businesses and organizations across 160 countries</strong>. Our verification infrastructure is built to serve the standards this network demands.</p>
+    <p style="font-size:13px;color:rgba(168,230,224,0.70);line-height:1.8;max-width:680px;margin-bottom:32px">We are actively seeking enterprise partners in Fashion, Agriculture, Aquaculture, and Manufacturing who are ready to make their circular performance provable.</p>
+  </div>
   <div class="contact-grid">
     <div>
       <div class="contact-name">Curt Vance</div>
